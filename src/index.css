@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.marquee-container {
+    overflow: hidden;
+    margin-bottom: 5px; /* Optional: Add margin between marquees */
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .marquee.left-to-right {
+    animation-name: marquee-left;
+  }
+  
+  .marquee.right-to-left {
+    animation-name: marquee-right;
+  }
+  
+  .marquee.paused {
+    animation-play-state: paused;
+  }
+  
+  @keyframes marquee-left {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @keyframes marquee-right {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  

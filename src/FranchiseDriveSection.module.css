@@ -1,0 +1,20 @@
+/* Example CSS for unordered lists with proper margin and indentation */
+
+ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 4em; /* Adjust padding for indentation */
+  }
+  
+  ul li {
+    list-style-type: disc;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Additional styling to ensure text wraps properly */
+  .text-wrap {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+  
